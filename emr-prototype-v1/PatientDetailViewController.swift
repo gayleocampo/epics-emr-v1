@@ -25,8 +25,6 @@ class PatientDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //print("made it")
-        
         if let currentPatient = currentObject {
             patientImage.image = UIImage(named:(currentPatient["patientImage"] as? String)!)
             patientName.text = currentPatient["patientFullName"] as? String
@@ -36,8 +34,6 @@ class PatientDetailViewController: UIViewController {
             patientHeight.text = currentPatient["patientHeight"] as? String
             patientWeight.text = currentPatient["patientWeight"] as? String
             patientAllergies.text = currentPatient["patientAllergies"] as? String
-            
-            // print(currentObject!["patientName"] as! String)
         }
         
         

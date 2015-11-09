@@ -84,4 +84,15 @@ class FilledPrescriptionTableViewController: PFQueryTableViewController {
             
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let detailedVC = segue.destinationViewController as? PrescriptionSlipViewController, let indexPath = self.tableView.indexPathForSelectedRow {
+            
+            if segue.identifier == "segueToPrescriptionSlip" {
+                
+                detailedVC.currentObject = objects![indexPath.row] as? PFObject
+            }
+        }
+    }
 }

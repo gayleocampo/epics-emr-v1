@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import Parse
 
 class PrescriptionSlipViewController: UIViewController {
-
+    @IBOutlet weak var patientName: UITextField!
+    @IBOutlet weak var medicationName: UITextField!
+    @IBOutlet weak var medicationAmount: UITextField!
+    @IBOutlet weak var physicianName: UITextField!
+    
+    var currentObject: PFObject?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let currentPrescription = currentObject {
+            patientName.text = currentPrescription["patientName"] as? String
+            medicationName.text = currentPrescription["medicationName"] as? String
+            medicationAmount.text = currentPrescription["medicationAmount"] as? String
+            physicianName.text = currentPrescription["physicianName"] as? String
+        }
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
