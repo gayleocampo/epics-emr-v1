@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
+import Bolts
 
 class InventoryTablesViewController: PFQueryTableViewController {
 

@@ -19,6 +19,23 @@
 		EAD551F81BF0472200E214D3 /* PharmacyDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */; };
 		EAD551FA1BF0475400E214D3 /* PatientDirectoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */; };
 		EAD551FC1BF0476B00E214D3 /* InventoryTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */; };
+		EAD552081BF047E600E214D3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552011BF047E500E214D3 /* Bolts.framework */; };
+		EAD552091BF047E600E214D3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552021BF047E500E214D3 /* Parse.framework */; };
+		EAD5520A1BF047E600E214D3 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552031BF047E500E214D3 /* ParseCrashReporting.framework */; };
+		EAD5520B1BF047E600E214D3 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552041BF047E500E214D3 /* ParseFacebookUtils.framework */; };
+		EAD5520C1BF047E600E214D3 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552051BF047E500E214D3 /* ParseFacebookUtilsV4.framework */; };
+		EAD5520D1BF047E600E214D3 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552061BF047E500E214D3 /* ParseTwitterUtils.framework */; };
+		EAD5520E1BF047E600E214D3 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552071BF047E600E214D3 /* ParseUI.framework */; };
+		EAD552101BF0482600E214D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD5520F1BF0482600E214D3 /* libsqlite3.tbd */; };
+		EAD552121BF0483E00E214D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552111BF0483E00E214D3 /* AudioToolbox.framework */; };
+		EAD552141BF0484600E214D3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552131BF0484600E214D3 /* CFNetwork.framework */; };
+		EAD552161BF0484D00E214D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552151BF0484D00E214D3 /* CoreGraphics.framework */; };
+		EAD552181BF0485500E214D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552171BF0485500E214D3 /* CoreLocation.framework */; };
+		EAD5521A1BF0485E00E214D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552191BF0485E00E214D3 /* QuartzCore.framework */; };
+		EAD5521C1BF0486600E214D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD5521B1BF0486600E214D3 /* Security.framework */; };
+		EAD5521E1BF0486E00E214D3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD5521D1BF0486E00E214D3 /* StoreKit.framework */; };
+		EAD552201BF0487C00E214D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD5521F1BF0487C00E214D3 /* SystemConfiguration.framework */; };
+		EAD552221BF0488800E214D3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552211BF0488800E214D3 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +74,23 @@
 		EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmacyDashViewController.swift; sourceTree = "<group>"; };
 		EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDirectoryTableViewController.swift; sourceTree = "<group>"; };
 		EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTablesViewController.swift; sourceTree = "<group>"; };
+		EAD552011BF047E500E214D3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		EAD552021BF047E500E214D3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EAD552031BF047E500E214D3 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		EAD552041BF047E500E214D3 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		EAD552051BF047E500E214D3 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		EAD552061BF047E500E214D3 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		EAD552071BF047E600E214D3 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		EAD5520F1BF0482600E214D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EAD552111BF0483E00E214D3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAD552131BF0484600E214D3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EAD552151BF0484D00E214D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAD552171BF0485500E214D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EAD552191BF0485E00E214D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAD5521B1BF0486600E214D3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EAD5521D1BF0486E00E214D3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EAD5521F1BF0487C00E214D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EAD552211BF0488800E214D3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD552221BF0488800E214D3 /* MobileCoreServices.framework in Frameworks */,
+				EAD552201BF0487C00E214D3 /* SystemConfiguration.framework in Frameworks */,
+				EAD5521E1BF0486E00E214D3 /* StoreKit.framework in Frameworks */,
+				EAD5521C1BF0486600E214D3 /* Security.framework in Frameworks */,
+				EAD5521A1BF0485E00E214D3 /* QuartzCore.framework in Frameworks */,
+				EAD552181BF0485500E214D3 /* CoreLocation.framework in Frameworks */,
+				EAD552161BF0484D00E214D3 /* CoreGraphics.framework in Frameworks */,
+				EAD552141BF0484600E214D3 /* CFNetwork.framework in Frameworks */,
+				EAD552121BF0483E00E214D3 /* AudioToolbox.framework in Frameworks */,
+				EAD552101BF0482600E214D3 /* libsqlite3.tbd in Frameworks */,
+				EAD552091BF047E600E214D3 /* Parse.framework in Frameworks */,
+				EAD5520A1BF047E600E214D3 /* ParseCrashReporting.framework in Frameworks */,
+				EAD5520E1BF047E600E214D3 /* ParseUI.framework in Frameworks */,
+				EAD5520B1BF047E600E214D3 /* ParseFacebookUtils.framework in Frameworks */,
+				EAD552081BF047E600E214D3 /* Bolts.framework in Frameworks */,
+				EAD5520D1BF047E600E214D3 /* ParseTwitterUtils.framework in Frameworks */,
+				EAD5520C1BF047E600E214D3 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,14 +158,13 @@
 		EA02EE9D1BF04376008FFFB8 /* emr-prototype-v1 */ = {
 			isa = PBXGroup;
 			children = (
+				EAD552001BF047CE00E214D3 /* Libraries */,
 				EA02EE9E1BF04376008FFFB8 /* AppDelegate.swift */,
 				EA02EEA21BF04376008FFFB8 /* Main.storyboard */,
 				EAD551F11BF0470100E214D3 /* LoginViewController.swift */,
 				EAD551F31BF0470C00E214D3 /* MainDashViewController.swift */,
-				EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */,
-				EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */,
-				EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */,
-				EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */,
+				EAD551FD1BF0479300E214D3 /* Patients */,
+				EAD551FF1BF047B000E214D3 /* Pharmacy */,
 				EA02EEA51BF04376008FFFB8 /* Assets.xcassets */,
 				EA02EEA71BF04376008FFFB8 /* LaunchScreen.storyboard */,
 				EA02EEAA1BF04376008FFFB8 /* Info.plist */,
@@ -138,6 +188,48 @@
 				EA02EEC01BF04376008FFFB8 /* Info.plist */,
 			);
 			path = "emr-prototype-v1UITests";
+			sourceTree = "<group>";
+		};
+		EAD551FD1BF0479300E214D3 /* Patients */ = {
+			isa = PBXGroup;
+			children = (
+				EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */,
+				EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */,
+			);
+			name = Patients;
+			sourceTree = "<group>";
+		};
+		EAD551FF1BF047B000E214D3 /* Pharmacy */ = {
+			isa = PBXGroup;
+			children = (
+				EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */,
+				EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */,
+			);
+			name = Pharmacy;
+			sourceTree = "<group>";
+		};
+		EAD552001BF047CE00E214D3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5520F1BF0482600E214D3 /* libsqlite3.tbd */,
+				EAD552211BF0488800E214D3 /* MobileCoreServices.framework */,
+				EAD5521F1BF0487C00E214D3 /* SystemConfiguration.framework */,
+				EAD5521D1BF0486E00E214D3 /* StoreKit.framework */,
+				EAD5521B1BF0486600E214D3 /* Security.framework */,
+				EAD552191BF0485E00E214D3 /* QuartzCore.framework */,
+				EAD552171BF0485500E214D3 /* CoreLocation.framework */,
+				EAD552151BF0484D00E214D3 /* CoreGraphics.framework */,
+				EAD552131BF0484600E214D3 /* CFNetwork.framework */,
+				EAD552111BF0483E00E214D3 /* AudioToolbox.framework */,
+				EAD552011BF047E500E214D3 /* Bolts.framework */,
+				EAD552021BF047E500E214D3 /* Parse.framework */,
+				EAD552031BF047E500E214D3 /* ParseCrashReporting.framework */,
+				EAD552041BF047E500E214D3 /* ParseFacebookUtils.framework */,
+				EAD552051BF047E500E214D3 /* ParseFacebookUtilsV4.framework */,
+				EAD552061BF047E500E214D3 /* ParseTwitterUtils.framework */,
+				EAD552071BF047E600E214D3 /* ParseUI.framework */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +514,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/emr-prototype-v1",
+				);
 				INFOPLIST_FILE = "emr-prototype-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Butler.emr-prototype-v1";
@@ -433,6 +529,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/emr-prototype-v1",
+				);
 				INFOPLIST_FILE = "emr-prototype-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Butler.emr-prototype-v1";
