@@ -38,6 +38,7 @@
 		EAD552221BF0488800E214D3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD552211BF0488800E214D3 /* MobileCoreServices.framework */; };
 		EAD552241BF04B5800E214D3 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552231BF04B5800E214D3 /* PatientDetailViewController.swift */; };
 		EAD552261BF04DE400E214D3 /* MedicationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552251BF04DE400E214D3 /* MedicationDetailViewController.swift */; };
+		EAD552281BF0506700E214D3 /* WaitingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552271BF0506700E214D3 /* WaitingListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		EAD552211BF0488800E214D3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EAD552231BF04B5800E214D3 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
 		EAD552251BF04DE400E214D3 /* MedicationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDetailViewController.swift; sourceTree = "<group>"; };
+		EAD552271BF0506700E214D3 /* WaitingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */,
 				EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */,
 				EAD552231BF04B5800E214D3 /* PatientDetailViewController.swift */,
+				EAD552271BF0506700E214D3 /* WaitingListViewController.swift */,
 			);
 			name = Patients;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			files = (
 				EAD551F41BF0470C00E214D3 /* MainDashViewController.swift in Sources */,
 				EAD552241BF04B5800E214D3 /* PatientDetailViewController.swift in Sources */,
+				EAD552281BF0506700E214D3 /* WaitingListViewController.swift in Sources */,
 				EAD551FA1BF0475400E214D3 /* PatientDirectoryTableViewController.swift in Sources */,
 				EAD551F21BF0470100E214D3 /* LoginViewController.swift in Sources */,
 				EAD551F81BF0472200E214D3 /* PharmacyDashViewController.swift in Sources */,
