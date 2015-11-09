@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKJ-7X-1Kc">
                                 <rect key="frame" x="365" y="700" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="qPZ-rE-AZf" kind="show" id="QMR-Tk-gei"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,10 +48,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVS-VL-D8l">
                                 <rect key="frame" x="356" y="342" width="56" height="30"/>
                                 <state key="normal" title="Patients"/>
+                                <connections>
+                                    <segue destination="Hwf-eS-K4e" kind="show" id="d8T-v1-oWi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-ab-2Y6">
                                 <rect key="frame" x="350" y="803" width="69" height="30"/>
                                 <state key="normal" title="Pharmacy"/>
+                                <connections>
+                                    <segue destination="g5O-ev-xHk" kind="show" id="mQ8-87-s6o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCr-RQ-eJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="1153"/>
+            <point key="canvasLocation" x="2055" y="1749"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SFm-gr-hL9">
@@ -111,6 +120,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm8-rp-cOx">
                                 <rect key="frame" x="327" y="834" width="115" height="30"/>
                                 <state key="normal" title="Patient Directory"/>
+                                <connections>
+                                    <segue destination="QhQ-xz-T2G" kind="show" id="ZD8-nl-quf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,7 +131,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiu-VT-DI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="-644"/>
+            <point key="canvasLocation" x="1999" y="-1776"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="jjZ-mp-WDY">
+            <objects>
+                <tableViewController id="QhQ-xz-T2G" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QwN-gi-OH8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="patientCell" id="Ygb-PU-ZJk">
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ygb-PU-ZJk" id="dWe-kL-tPr">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QhQ-xz-T2G" id="3vC-H3-pyc"/>
+                            <outlet property="delegate" destination="QhQ-xz-T2G" id="zHu-0i-91O"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrv-UK-yTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999" y="-581"/>
         </scene>
     </scenes>
 </document>

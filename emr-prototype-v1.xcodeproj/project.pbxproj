@@ -13,6 +13,12 @@
 		EA02EEA91BF04376008FFFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02EEA71BF04376008FFFB8 /* LaunchScreen.storyboard */; };
 		EA02EEB41BF04376008FFFB8 /* emr_prototype_v1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02EEB31BF04376008FFFB8 /* emr_prototype_v1Tests.swift */; };
 		EA02EEBF1BF04376008FFFB8 /* emr_prototype_v1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02EEBE1BF04376008FFFB8 /* emr_prototype_v1UITests.swift */; };
+		EAD551F21BF0470100E214D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F11BF0470100E214D3 /* LoginViewController.swift */; };
+		EAD551F41BF0470C00E214D3 /* MainDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F31BF0470C00E214D3 /* MainDashViewController.swift */; };
+		EAD551F61BF0471600E214D3 /* PatientDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */; };
+		EAD551F81BF0472200E214D3 /* PharmacyDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */; };
+		EAD551FA1BF0475400E214D3 /* PatientDirectoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */; };
+		EAD551FC1BF0476B00E214D3 /* InventoryTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		EA02EEBA1BF04376008FFFB8 /* emr-prototype-v1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emr-prototype-v1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA02EEBE1BF04376008FFFB8 /* emr_prototype_v1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emr_prototype_v1UITests.swift; sourceTree = "<group>"; };
 		EA02EEC01BF04376008FFFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD551F11BF0470100E214D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EAD551F31BF0470C00E214D3 /* MainDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDashViewController.swift; sourceTree = "<group>"; };
+		EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDashViewController.swift; sourceTree = "<group>"; };
+		EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmacyDashViewController.swift; sourceTree = "<group>"; };
+		EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDirectoryTableViewController.swift; sourceTree = "<group>"; };
+		EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTablesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,12 @@
 			children = (
 				EA02EE9E1BF04376008FFFB8 /* AppDelegate.swift */,
 				EA02EEA21BF04376008FFFB8 /* Main.storyboard */,
+				EAD551F11BF0470100E214D3 /* LoginViewController.swift */,
+				EAD551F31BF0470C00E214D3 /* MainDashViewController.swift */,
+				EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */,
+				EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */,
+				EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */,
+				EAD551FB1BF0476B00E214D3 /* InventoryTablesViewController.swift */,
 				EA02EEA51BF04376008FFFB8 /* Assets.xcassets */,
 				EA02EEA71BF04376008FFFB8 /* LaunchScreen.storyboard */,
 				EA02EEAA1BF04376008FFFB8 /* Info.plist */,
@@ -256,6 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD551F41BF0470C00E214D3 /* MainDashViewController.swift in Sources */,
+				EAD551FA1BF0475400E214D3 /* PatientDirectoryTableViewController.swift in Sources */,
+				EAD551F21BF0470100E214D3 /* LoginViewController.swift in Sources */,
+				EAD551F81BF0472200E214D3 /* PharmacyDashViewController.swift in Sources */,
+				EAD551F61BF0471600E214D3 /* PatientDashViewController.swift in Sources */,
+				EAD551FC1BF0476B00E214D3 /* InventoryTablesViewController.swift in Sources */,
 				EA02EE9F1BF04376008FFFB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +507,7 @@
 				EA02EEC51BF04376008FFFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA02EEC61BF04376008FFFB8 /* Build configuration list for PBXNativeTarget "emr-prototype-v1Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +516,7 @@
 				EA02EEC81BF04376008FFFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA02EEC91BF04376008FFFB8 /* Build configuration list for PBXNativeTarget "emr-prototype-v1UITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +525,7 @@
 				EA02EECB1BF04376008FFFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
