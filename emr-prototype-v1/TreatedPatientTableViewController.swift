@@ -83,5 +83,16 @@ class TreatedPatientTableViewController: PFQueryTableViewController {
             
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let detailedVC = segue.destinationViewController as? PatientDetailViewController, let indexPath = self.tableView.indexPathForSelectedRow {
+            
+            if segue.identifier == "segueToPatientDetail" {
+                
+                detailedVC.currentObject = objects![indexPath.row] as? PFObject
+            }
+        }
+    }
 
 }

@@ -84,6 +84,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-VO-zOv">
                                 <rect key="frame" x="339" y="317" width="91" height="30"/>
                                 <state key="normal" title="Prescriptions"/>
+                                <connections>
+                                    <segue destination="I6R-j0-E4q" kind="show" id="dRl-FR-Za4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3g-TC-P6h">
                                 <rect key="frame" x="352" y="728" width="64" height="30"/>
@@ -151,7 +154,37 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1936" y="3617"/>
+            <point key="canvasLocation" x="1936" y="4281"/>
+        </scene>
+        <!--Unfilled-->
+        <scene sceneID="sXd-KQ-jtn">
+            <objects>
+                <tableViewController id="w3Y-dj-UP5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="owz-Qs-mfh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2fI-QB-9Ih">
+                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2fI-QB-9Ih" id="fEs-Xa-Vpf">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w3Y-dj-UP5" id="bMB-8l-JX6"/>
+                            <outlet property="delegate" destination="w3Y-dj-UP5" id="hjm-SU-vJJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Unfilled" id="Zv8-9q-Gz3"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2B-AQ-6sV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3926" y="1703"/>
         </scene>
         <!--Medication Detail View Controller-->
         <scene sceneID="eqn-t0-VjN">
@@ -212,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eda-43-9qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2818" y="3617"/>
+            <point key="canvasLocation" x="2826" y="4281"/>
         </scene>
         <!--Patient Dash View Controller-->
         <scene sceneID="SFm-gr-hL9">
@@ -328,6 +361,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="EQ8-4p-rqN" kind="show" identifier="segueToPatientDetail" id="jDc-qC-4wE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -552,5 +588,56 @@
             </objects>
             <point key="canvasLocation" x="3956" y="-1920"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uvW-MU-h5K">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="I6R-j0-E4q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ELa-Wo-Jge">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="w3Y-dj-UP5" kind="relationship" relationship="viewControllers" id="MNs-YL-cYf"/>
+                        <segue destination="rk2-HY-Rih" kind="relationship" relationship="viewControllers" id="hIu-Hw-Tca"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0N-5f-izl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976" y="2405"/>
+        </scene>
+        <!--Filled-->
+        <scene sceneID="reB-Xt-dpu">
+            <objects>
+                <tableViewController id="rk2-HY-Rih" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wEC-QC-Va1">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BIm-Dd-TBY">
+                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BIm-Dd-TBY" id="nz7-Lw-gRq">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rk2-HY-Rih" id="tCn-5p-ZfP"/>
+                            <outlet property="delegate" destination="rk2-HY-Rih" id="pOI-cH-PpH"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Filled" id="eMU-jn-tKx"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpy-6S-Erh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3956" y="3095"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="O5e-4L-grC"/>
+    </inferredMetricsTieBreakers>
 </document>
