@@ -164,14 +164,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="d5F-RX-oWl">
+                            <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="w3Y-dj-UP5" id="og4-8L-W8I"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="patientCell" id="2fI-QB-9Ih" customClass="PFTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prescriptionCell" textLabel="ZVq-vU-B3u" detailTextLabel="nB1-Rj-pjE" style="IBUITableViewCellStyleSubtitle" id="2fI-QB-9Ih" customClass="PFTableViewCell">
+                                <rect key="frame" x="0.0" y="136" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2fI-QB-9Ih" id="fEs-Xa-Vpf">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZVq-vU-B3u">
+                                            <rect key="frame" x="68" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nB1-Rj-pjE">
+                                            <rect key="frame" x="68" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="AWr-gx-1qi" kind="show" id="vvP-rD-hfv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -181,8 +208,20 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Unfilled" id="Zv8-9q-Gz3"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ikL-nD-FVz" id="IgJ-jh-IPl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2B-AQ-6sV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ikL-nD-FVz">
+                    <connections>
+                        <outlet property="delegate" destination="w3Y-dj-UP5" id="oYl-1z-876"/>
+                        <outlet property="searchBar" destination="d5F-RX-oWl" id="sPq-as-TPI"/>
+                        <outlet property="searchContentsController" destination="w3Y-dj-UP5" id="wHC-HO-Ddk"/>
+                        <outlet property="searchResultsDataSource" destination="w3Y-dj-UP5" id="utF-Pc-wbs"/>
+                        <outlet property="searchResultsDelegate" destination="w3Y-dj-UP5" id="paU-0D-W8U"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3926" y="1703"/>
         </scene>
@@ -614,14 +653,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Ru3-M9-Qey">
+                            <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="rk2-HY-Rih" id="xk8-r4-ngb"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="patientCell" id="BIm-Dd-TBY" customClass="PFTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prescriptionCell" textLabel="JLS-ms-jAx" detailTextLabel="toH-qO-5X8" style="IBUITableViewCellStyleSubtitle" id="BIm-Dd-TBY" customClass="PFTableViewCell">
+                                <rect key="frame" x="0.0" y="136" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BIm-Dd-TBY" id="nz7-Lw-gRq">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JLS-ms-jAx">
+                                            <rect key="frame" x="68" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="toH-qO-5X8">
+                                            <rect key="frame" x="68" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="AWr-gx-1qi" kind="show" id="fv5-qJ-T4i"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -631,13 +697,45 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Filled" id="eMU-jn-tKx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Jpa-aT-yXw" id="1oV-UC-TMl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpy-6S-Erh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Jpa-aT-yXw">
+                    <connections>
+                        <outlet property="delegate" destination="rk2-HY-Rih" id="Ywr-SW-J44"/>
+                        <outlet property="searchBar" destination="Ru3-M9-Qey" id="wI2-Xw-65O"/>
+                        <outlet property="searchContentsController" destination="rk2-HY-Rih" id="xS5-Wr-dZa"/>
+                        <outlet property="searchResultsDataSource" destination="rk2-HY-Rih" id="bZh-ob-yvc"/>
+                        <outlet property="searchResultsDelegate" destination="rk2-HY-Rih" id="bXR-I4-ALR"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3956" y="3095"/>
+        </scene>
+        <!--Prescription Slip View Controller-->
+        <scene sceneID="3aL-fx-Bnd">
+            <objects>
+                <viewController id="AWr-gx-1qi" customClass="PrescriptionSlipViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WvP-yu-Uzm"/>
+                        <viewControllerLayoutGuide type="bottom" id="m4x-KI-GVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ENl-18-qP9">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1p-bp-Q14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5130" y="2474"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="jDc-qC-4wE"/>
+        <segue reference="fv5-qJ-T4i"/>
     </inferredMetricsTieBreakers>
 </document>

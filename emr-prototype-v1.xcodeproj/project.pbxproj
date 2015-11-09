@@ -43,6 +43,7 @@
 		EAD5522E1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5522D1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift */; };
 		EAD552301BF0620300E214D3 /* FilledPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5522F1BF0620300E214D3 /* FilledPrescriptionTableViewController.swift */; };
 		EAD552321BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552311BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift */; };
+		EAD552341BF064F000E214D3 /* PrescriptionSlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552331BF064F000E214D3 /* PrescriptionSlipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		EAD5522D1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UntreatedPatientTableViewController.swift; path = ../UntreatedPatientTableViewController.swift; sourceTree = "<group>"; };
 		EAD5522F1BF0620300E214D3 /* FilledPrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilledPrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		EAD552311BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnfilledPrescriptionTableViewController.swift; sourceTree = "<group>"; };
+		EAD552331BF064F000E214D3 /* PrescriptionSlipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionSlipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				EAD552251BF04DE400E214D3 /* MedicationDetailViewController.swift */,
 				EAD552311BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift */,
 				EAD5522F1BF0620300E214D3 /* FilledPrescriptionTableViewController.swift */,
+				EAD552331BF064F000E214D3 /* PrescriptionSlipViewController.swift */,
 			);
 			name = Pharmacy;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				EAD552261BF04DE400E214D3 /* MedicationDetailViewController.swift in Sources */,
 				EAD551FC1BF0476B00E214D3 /* InventoryTableViewController.swift in Sources */,
 				EA02EE9F1BF04376008FFFB8 /* AppDelegate.swift in Sources */,
+				EAD552341BF064F000E214D3 /* PrescriptionSlipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,16 +51,17 @@ class UnfilledPrescriptionTableViewController: PFQueryTableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         
         //create a cell
-        var cell = tableView.dequeueReusableCellWithIdentifier("patientCell") as! PFTableViewCell!
+        var cell = tableView.dequeueReusableCellWithIdentifier("prescriptionCell") as! PFTableViewCell!
         
         //ensure the cell exists -- Parse recommends that
         if cell == nil {
-            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "patientCell")
+            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "prescriptionCell")
         }
         
         //extract values from the PFObject to dispaly in the table view
         if let patient = object!["patientName"] as? String {
             cell?.textLabel?.text = patient
+            cell?.detailTextLabel?.text = object!["medicationName"] as? String
             
         }
         
