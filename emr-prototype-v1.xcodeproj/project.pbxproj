@@ -41,6 +41,8 @@
 		EAD552281BF0506700E214D3 /* WaitingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552271BF0506700E214D3 /* WaitingListViewController.swift */; };
 		EAD5522C1BF0559800E214D3 /* TreatedPatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5522B1BF0559800E214D3 /* TreatedPatientTableViewController.swift */; };
 		EAD5522E1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5522D1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift */; };
+		EAD552301BF0620300E214D3 /* FilledPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5522F1BF0620300E214D3 /* FilledPrescriptionTableViewController.swift */; };
+		EAD552321BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD552311BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		EAD552271BF0506700E214D3 /* WaitingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingListViewController.swift; sourceTree = "<group>"; };
 		EAD5522B1BF0559800E214D3 /* TreatedPatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatedPatientTableViewController.swift; sourceTree = "<group>"; };
 		EAD5522D1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UntreatedPatientTableViewController.swift; path = ../UntreatedPatientTableViewController.swift; sourceTree = "<group>"; };
+		EAD5522F1BF0620300E214D3 /* FilledPrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilledPrescriptionTableViewController.swift; sourceTree = "<group>"; };
+		EAD552311BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnfilledPrescriptionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,8 @@
 				EAD551F71BF0472200E214D3 /* PharmacyDashViewController.swift */,
 				EAD551FB1BF0476B00E214D3 /* InventoryTableViewController.swift */,
 				EAD552251BF04DE400E214D3 /* MedicationDetailViewController.swift */,
+				EAD552311BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift */,
+				EAD5522F1BF0620300E214D3 /* FilledPrescriptionTableViewController.swift */,
 			);
 			name = Pharmacy;
 			sourceTree = "<group>";
@@ -385,11 +391,13 @@
 				EAD552241BF04B5800E214D3 /* PatientDetailViewController.swift in Sources */,
 				EAD552281BF0506700E214D3 /* WaitingListViewController.swift in Sources */,
 				EAD551FA1BF0475400E214D3 /* PatientDirectoryTableViewController.swift in Sources */,
+				EAD552301BF0620300E214D3 /* FilledPrescriptionTableViewController.swift in Sources */,
 				EAD551F21BF0470100E214D3 /* LoginViewController.swift in Sources */,
 				EAD551F81BF0472200E214D3 /* PharmacyDashViewController.swift in Sources */,
 				EAD5522C1BF0559800E214D3 /* TreatedPatientTableViewController.swift in Sources */,
 				EAD5522E1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift in Sources */,
 				EAD551F61BF0471600E214D3 /* PatientDashViewController.swift in Sources */,
+				EAD552321BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift in Sources */,
 				EAD552261BF04DE400E214D3 /* MedicationDetailViewController.swift in Sources */,
 				EAD551FC1BF0476B00E214D3 /* InventoryTableViewController.swift in Sources */,
 				EA02EE9F1BF04376008FFFB8 /* AppDelegate.swift in Sources */,

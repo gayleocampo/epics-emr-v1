@@ -159,13 +159,13 @@
         <!--Unfilled-->
         <scene sceneID="sXd-KQ-jtn">
             <objects>
-                <tableViewController id="w3Y-dj-UP5" sceneMemberID="viewController">
+                <tableViewController id="w3Y-dj-UP5" customClass="UnfilledPrescriptionTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="owz-Qs-mfh">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2fI-QB-9Ih">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="patientCell" id="2fI-QB-9Ih" customClass="PFTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2fI-QB-9Ih" id="fEs-Xa-Vpf">
@@ -609,13 +609,13 @@
         <!--Filled-->
         <scene sceneID="reB-Xt-dpu">
             <objects>
-                <tableViewController id="rk2-HY-Rih" sceneMemberID="viewController">
+                <tableViewController id="rk2-HY-Rih" customClass="FilledPrescriptionTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wEC-QC-Va1">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BIm-Dd-TBY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="patientCell" id="BIm-Dd-TBY" customClass="PFTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BIm-Dd-TBY" id="nz7-Lw-gRq">
@@ -638,6 +638,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="O5e-4L-grC"/>
+        <segue reference="jDc-qC-4wE"/>
     </inferredMetricsTieBreakers>
 </document>
