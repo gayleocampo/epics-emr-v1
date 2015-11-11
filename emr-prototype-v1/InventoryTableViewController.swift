@@ -1,3 +1,4 @@
+
 //
 //  InventoryTablesViewController.swift
 //  emr-prototype-v1
@@ -32,7 +33,8 @@ class InventoryTableViewController: PFQueryTableViewController {
     //define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery {
         let query = PFQuery(className: "Medication_Inventory")
-        query.orderByAscending("medicationName")
+        let caseMedication = "medicationName".lowercaseString
+        query.orderByAscending(caseMedication)
         
         return query
     }
