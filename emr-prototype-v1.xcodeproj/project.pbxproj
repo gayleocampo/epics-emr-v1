@@ -44,6 +44,7 @@
 		EAE00AA01BF3CF3D00A8B2DF /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE00A991BF3CF3D00A8B2DF /* ParseFacebookUtilsV4.framework */; };
 		EAE00AA11BF3CF3D00A8B2DF /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE00A9A1BF3CF3D00A8B2DF /* ParseTwitterUtils.framework */; };
 		EAE00AA21BF3CF3D00A8B2DF /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE00A9B1BF3CF3D00A8B2DF /* ParseUI.framework */; };
+		EAE00AA41BF3E5EB00A8B2DF /* CheckInTriageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE00AA31BF3E5EB00A8B2DF /* CheckInTriageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		EAE00A991BF3CF3D00A8B2DF /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		EAE00A9A1BF3CF3D00A8B2DF /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
 		EAE00A9B1BF3CF3D00A8B2DF /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		EAE00AA31BF3E5EB00A8B2DF /* CheckInTriageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInTriageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD551F51BF0471600E214D3 /* PatientDashViewController.swift */,
+				EAE00AA31BF3E5EB00A8B2DF /* CheckInTriageTableViewController.swift */,
 				EAD551F91BF0475400E214D3 /* PatientDirectoryTableViewController.swift */,
 				EAD552231BF04B5800E214D3 /* PatientDetailViewController.swift */,
 				EAD552271BF0506700E214D3 /* WaitingListViewController.swift */,
@@ -399,6 +402,7 @@
 				EAD551F81BF0472200E214D3 /* PharmacyDashViewController.swift in Sources */,
 				EAD5522C1BF0559800E214D3 /* TreatedPatientTableViewController.swift in Sources */,
 				EAD5522E1BF055BA00E214D3 /* UntreatedPatientTableViewController.swift in Sources */,
+				EAE00AA41BF3E5EB00A8B2DF /* CheckInTriageTableViewController.swift in Sources */,
 				EAD551F61BF0471600E214D3 /* PatientDashViewController.swift in Sources */,
 				EAD552321BF0621500E214D3 /* UnfilledPrescriptionTableViewController.swift in Sources */,
 				EAD552261BF04DE400E214D3 /* MedicationDetailViewController.swift in Sources */,
