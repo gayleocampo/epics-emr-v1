@@ -17,6 +17,8 @@ class MedicationDetailViewController: UIViewController {
     
     var currentObject: PFObject?
     
+    @IBAction func saveMedication(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -1,4 +1,3 @@
-
 //
 //  InventoryTablesViewController.swift
 //  emr-prototype-v1
@@ -12,7 +11,9 @@ import Parse
 import ParseUI
 import Bolts
 
-class InventoryTableViewController: PFQueryTableViewController {
+class InventoryTableViewController: PFQueryTableViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     //initialize the PFQueryTableView
     override init(style: UITableViewStyle, className: String!) {
@@ -33,8 +34,14 @@ class InventoryTableViewController: PFQueryTableViewController {
     //define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery {
         let query = PFQuery(className: "Medication_Inventory")
-        let caseMedication = "medicationName".lowercaseString
-        query.orderByAscending(caseMedication)
+        
+        // Add a where clause if there is a search criteria
+        if searchBar.text != "" {
+            query.whereKey("searchText", containsString: searchBar.text!.lowercaseString)
+        }
+        
+        let lowercaseMedication = "medicationName".lowercaseString
+        query.orderByAscending(lowercaseMedication)
         
         return query
     }
@@ -43,9 +50,12 @@ class InventoryTableViewController: PFQueryTableViewController {
         //data reloading from parse
         self.loadObjects()
         
+        searchBar!.delegate = self
+        
         //activate and display the edit button
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         
@@ -60,8 +70,8 @@ class InventoryTableViewController: PFQueryTableViewController {
         //extract values from the PFObject to dispaly in the table view
         if let medication = object!["medicationName"] as? String {
             cell?.textLabel?.text = medication
-            
         }
+        
         
         return cell
     }
@@ -81,6 +91,36 @@ class InventoryTableViewController: PFQueryTableViewController {
             self.loadObjects();
             
         }
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        
+        // Dismiss the keyboard
+        searchBar.resignFirstResponder()
+        
+        // Force reload of table data
+        self.loadObjects()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        
+        // Dismiss the keyboard
+        searchBar.resignFirstResponder()
+        
+        // Force reload of table data
+        self.loadObjects()
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        
+        // Clear any search criteria
+        searchBar.text = ""
+        
+        // Dismiss the keyboard
+        searchBar.resignFirstResponder()
+        
+        // Force reload of table data
+        self.loadObjects()
     }
     
     

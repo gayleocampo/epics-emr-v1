@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8ib-VN-CoV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8ib-VN-CoV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -33,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="64" y="214"/>
         </scene>
-        <!--Main Dash View Controller-->
+        <!--Dashboard-->
         <scene sceneID="WuO-2x-1Rn">
             <objects>
                 <viewController id="qPZ-rE-AZf" customClass="MainDashViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wAh-Kf-dgM"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="wAh-Kf-dgM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0U4-uf-tI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="1936" y="2405"/>
         </scene>
-        <!--Inventory Table View Controller-->
+        <!--Medication Inventory-->
         <scene sceneID="rbS-31-3j9">
             <objects>
                 <tableViewController id="BVX-E3-8r6" customClass="InventoryTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,13 +112,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="SMi-Rb-8Lm">
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="N2w-D0-jDV">
                             <rect key="frame" x="0.0" y="64" width="768" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="BVX-E3-8r6" id="oAX-Zt-N6u"/>
-                            </connections>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="medicationCell" id="Yk2-rs-nb4" customClass="PFTableViewCell">
@@ -138,9 +135,12 @@
                             <outlet property="delegate" destination="BVX-E3-8r6" id="oQf-gu-TTw"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Medication Inventory" id="QME-1X-vJG"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="searchBar" destination="SMi-Rb-8Lm" id="lse-fz-Z4s"/>
+                        <outlet property="searchBar" destination="N2w-D0-jDV" id="gxW-xI-Al5"/>
                         <outlet property="searchDisplayController" destination="UgA-fr-6nY" id="EgR-JM-rAi"/>
                     </connections>
                 </tableViewController>
@@ -225,7 +225,7 @@
             </objects>
             <point key="canvasLocation" x="3956" y="1703"/>
         </scene>
-        <!--Medication Detail View Controller-->
+        <!--Medication Details-->
         <scene sceneID="eqn-t0-VjN">
             <objects>
                 <viewController id="csp-Ue-p0a" customClass="MedicationDetailViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -275,6 +275,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Medication Details" id="QGt-C4-hzi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Pnp-Qu-2Io"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="medicationName" destination="ZWr-HA-5hy" id="cYR-Qj-F6D"/>
@@ -284,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eda-43-9qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2826" y="4281"/>
+            <point key="canvasLocation" x="3066" y="4281"/>
         </scene>
         <!--Patient Dash View Controller-->
         <scene sceneID="SFm-gr-hL9">
@@ -448,7 +451,7 @@
             </objects>
             <point key="canvasLocation" x="4936" y="-4058"/>
         </scene>
-        <!--Check In Triage Table View Controller-->
+        <!--Check-In & Triage-->
         <scene sceneID="QNY-zK-qq7">
             <objects>
                 <tableViewController id="x6S-SS-glt" customClass="CheckInTriageTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -464,6 +467,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="h7E-ls-ftq" kind="show" id="h6B-kp-4ne"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -472,13 +478,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="T7X-uR-Lp7">
-                        <barButtonItem key="rightBarButtonItem" title="New Patient" id="1k9-QT-idh">
-                            <connections>
-                                <segue destination="h7E-ls-ftq" kind="show" id="S76-t3-tmb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Check-In &amp; Triage" id="rkc-Nx-mYF"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
@@ -486,7 +486,7 @@
             </objects>
             <point key="canvasLocation" x="4048" y="-3251"/>
         </scene>
-        <!--Untreated-->
+        <!--Untreated Patients-->
         <scene sceneID="o66-YR-d5K">
             <objects>
                 <tableViewController id="WBg-i9-OEi" customClass="UntreatedPatientTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -519,6 +519,7 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Untreated" id="Xbt-vx-TwU"/>
+                    <navigationItem key="navigationItem" title="Untreated Patients" id="vn4-wq-D21"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="csy-FD-BK5" id="GMM-gh-Ef6"/>
@@ -537,7 +538,7 @@
             </objects>
             <point key="canvasLocation" x="4878" y="-2466"/>
         </scene>
-        <!--Treated-->
+        <!--Treated Patients-->
         <scene sceneID="ZEp-aX-3WV">
             <objects>
                 <tableViewController id="RDC-pC-99i" customClass="TreatedPatientTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -572,6 +573,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Treated" id="M76-2n-mVU"/>
+                    <navigationItem key="navigationItem" title="Treated Patients" id="wOm-dY-sE1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="aui-c2-hsQ" id="a7U-zE-sIM"/>
@@ -590,7 +592,7 @@
             </objects>
             <point key="canvasLocation" x="4878" y="-1359"/>
         </scene>
-        <!--Patient Directory Table View Controller-->
+        <!--Patient Directory-->
         <scene sceneID="jjZ-mp-WDY">
             <objects>
                 <tableViewController id="QhQ-xz-T2G" customClass="PatientDirectoryTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -616,6 +618,7 @@
                             <outlet property="delegate" destination="QhQ-xz-T2G" id="zHu-0i-91O"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Patient Directory" id="kx8-py-StS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrv-UK-yTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -750,7 +753,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ZF-yr-4xE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6610" y="-677"/>
+            <point key="canvasLocation" x="6530" y="-577"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5ZA-tD-ZeU">
@@ -806,7 +809,7 @@
             </objects>
             <point key="canvasLocation" x="2976" y="2405"/>
         </scene>
-        <!--Filled-->
+        <!--Filled Prescriptions-->
         <scene sceneID="reB-Xt-dpu">
             <objects>
                 <tableViewController id="rk2-HY-Rih" customClass="FilledPrescriptionTableViewController" customModule="emr_prototype_v1" customModuleProvider="target" sceneMemberID="viewController">
@@ -857,6 +860,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Filled" id="eMU-jn-tKx"/>
+                    <navigationItem key="navigationItem" title="Filled Prescriptions" id="COa-aI-jK7"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="Jpa-aT-yXw" id="1oV-UC-TMl"/>
@@ -948,7 +952,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="vvP-rD-hfv"/>
         <segue reference="O5e-4L-grC"/>
-        <segue reference="fv5-qJ-T4i"/>
     </inferredMetricsTieBreakers>
 </document>
