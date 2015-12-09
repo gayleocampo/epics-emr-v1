@@ -87,6 +87,8 @@ class CheckInTriageTableViewController: PFQueryTableViewController {
             if segue.identifier == "segueToPatientDetail" {
                 
                 detailedVC.currentObject = objects![indexPath.row] as? PFObject
+            } else if segue.identifier == "segueToNewPatient" {
+                detailedVC.currentObject = nil
             }
         }
     }
